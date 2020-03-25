@@ -14,9 +14,6 @@ namespace NumberGuessingGame
 
             {
 
-                // Init correct number
-                //int correctNumber = 8;
-
                 Random random = new Random();
 
                 // Init correct number
