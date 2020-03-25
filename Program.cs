@@ -20,7 +20,7 @@ namespace NumberGuessingGame
                 Random random = new Random();
 
                 // Init correct number
-                int correctNumber = random.Next(1, 10);
+                int correctNumber = random.Next(1, 11);
 
                 // Init guess var
                 int guess = 0;
@@ -81,18 +81,18 @@ namespace NumberGuessingGame
             }
 
 
-            void GetAppInfo()
+            static void GetAppInfo()
             {
                 // app var
                 string appName = "Number Guesser";
-                string appVersion = "1.0.0";
+                string appVersion = "1.0.1";
                 string appAuthor = "Borbari Gogo-Abbey";
 
                 // Change text color
                 Console.ForegroundColor = ConsoleColor.Green;
 
                 // app info
-                Console.WriteLine("{0}: Version {1} by {2}", appName, appVersion, appAuthor);
+                Console.WriteLine($"{appName}: Version {appVersion} by {appAuthor}");
 
                 // Reset color
                 Console.ResetColor();
@@ -101,7 +101,7 @@ namespace NumberGuessingGame
 
 
             // Ask users name and greet
-            void GreetUsers()
+            static void GreetUsers()
             {
                 // Ask users name
                 Console.WriteLine("What is your name?");
@@ -113,7 +113,7 @@ namespace NumberGuessingGame
             }
 
             // Print color and message
-            void PrintColorAndMessage(ConsoleColor color, string message)
+            static void PrintColorAndMessage(ConsoleColor color, string message)
             {
                 // Change text color
                 Console.ForegroundColor = color;
